@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>add</title>
+</head>
+<body>
+<form th:action="@{/customers}" th:object="${customer}" method="post">
+    <table>
+        <tr>
+            <td>
+                <input type="text" th:field="*{id}" readonly>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" th:field="*{firstName}" placeholder="First Name">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" th:field="*{lastName}" placeholder="Last Name">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" th:field="*{email}" placeholder="Email">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" th:field="*{mobile}" placeholder="Mobile">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" th:field="*{gender}" placeholder="Gender">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" th:field="*{zipCode}" placeholder="ZipCode">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="Save">
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
